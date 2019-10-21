@@ -84,6 +84,9 @@
                                 <rect key="frame" x="142" y="396" width="90" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Calculate Tip"/>
+                                <connections>
+                                    <action selector="CalculateTheTip:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Fiv-l3-3jq"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="%" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4lr-Rm-ST2">
                                 <rect key="frame" x="233" y="227" width="14" height="21"/>
@@ -92,11 +95,30 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="22g-wM-2EL">
+                                <rect key="frame" x="124" y="500" width="130" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SM5-Gc-cRX">
+                                <rect key="frame" x="147" y="592" width="80" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="AmountOfBill" destination="7RE-RI-ftb" id="8j0-WU-8cB"/>
+                        <outlet property="AmountOfPeople" destination="RFx-fk-7QG" id="o8q-5S-eHh"/>
+                        <outlet property="SubmittedTipPercent" destination="U88-Yx-SBt" id="8z7-y3-ebW"/>
+                        <outlet property="TipPerPersonLabel" destination="SM5-Gc-cRX" id="Jg4-mR-cTZ"/>
+                        <outlet property="TotalTipLabel" destination="22g-wM-2EL" id="ijB-gd-fOe"/>
                         <outlet property="amountOfBill" destination="7RE-RI-ftb" id="EX8-s5-BOr"/>
                         <outlet property="amountOfPeople" destination="RFx-fk-7QG" id="Ov4-37-RLB"/>
                         <outlet property="tipPerPersonLabel" destination="Bzy-f6-1nU" id="tjc-wz-0GU"/>
